@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tanvi Creations</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <style>
+    .zoom-on-hover {
+      transition: transform 0.3s ease-in-out;
+    }
+    .zoom-on-hover:hover {
+      transform: scale(1.05);
+    }
+
+    .glow-on-hover:hover {
+      box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.2);
+    }
+
+    .animated-button {
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .animated-button:hover {
+      background-color: #1f2937;
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body class="bg-gray-900 text-white font-sans">
 
@@ -32,62 +54,77 @@
       <h3 class="text-2xl font-bold text-center mb-8 text-white">Our Handmade Collection</h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
-        <!-- Product Cards -->
+        <!-- Product Template -->
+        <!-- Repeat for each product with image and name updates -->
 
-        <div class="bg-gray-800 rounded-lg shadow p-4 relative group">
-          <img src="images/Rakhi 1.jpeg" alt="Rakhi 1" class="w-full h-48 object-cover rounded">
-          <div class="absolute top-0 left-0 bg-black bg-opacity-75 text-white text-sm px-2 py-1 rounded-bl-lg opacity-0 group-hover:opacity-100 transition">Rakhi 1</div>
-          <h4 class="font-semibold text-lg mt-4 text-white">Rakhi 1</h4>
-          <p class="text-gray-400 text-sm mb-2">Simple and elegant floral rakhi design.</p>
-          <p class="text-white font-bold mb-2">₹150</p>
-        </div>
-
-        <div class="bg-gray-800 rounded-lg shadow p-4 relative group">
-          <img src="images/Rakhi 1.jpeg" alt="Cartoon Rakhi" class="w-full h-48 object-cover rounded">
-          <div class="absolute top-0 left-0 bg-black bg-opacity-75 text-white text-sm px-2 py-1 rounded-bl-lg opacity-0 group-hover:opacity-100 transition">Cartoon Rakhi</div>
-          <h4 class="font-semibold text-lg mt-4 text-white">Cartoon Rakhi</h4>
-          <p class="text-gray-400 text-sm mb-2">Fun designs like lion, rabbit, car and more for kids!</p>
-          <p class="text-white font-bold mb-2">₹150</p>
-        </div>
-
-        <div class="bg-gray-800 rounded-lg shadow p-4 relative group">
-          <img src="images/Mix all.jpeg" alt="Mix All" class="w-full h-48 object-cover rounded">
-          <div class="absolute top-0 left-0 bg-black bg-opacity-75 text-white text-sm px-2 py-1 rounded-bl-lg opacity-0 group-hover:opacity-100 transition">Mix Collection</div>
-          <h4 class="font-semibold text-lg mt-4 text-white">Mix Collection</h4>
-          <p class="text-gray-400 text-sm mb-2">A mix of colorful themes including cars, flowers & more.</p>
-          <p class="text-white font-bold mb-2">₹150</p>
-        </div>
-
-        <div class="bg-gray-800 rounded-lg shadow p-4 relative group">
-          <img src="images/Alphabet Rakhi.jpeg" alt="Alphabet Rakhi" class="w-full h-48 object-cover rounded">
+        <!-- 1. Alphabet Rakhi -->
+        <div class="bg-gray-800 rounded-lg shadow p-4 relative group glow-on-hover">
+          <img src="images/Alphabet Rakhi.jpeg" alt="Alphabet Rakhi" class="w-full h-48 object-contain rounded bg-white zoom-on-hover">
           <div class="absolute top-0 left-0 bg-black bg-opacity-75 text-white text-sm px-2 py-1 rounded-bl-lg opacity-0 group-hover:opacity-100 transition">Alphabet Rakhi</div>
           <h4 class="font-semibold text-lg mt-4 text-white">Alphabet Rakhi</h4>
-          <p class="text-gray-400 text-sm mb-2">Custom rakhis with initials – pick your letter!</p>
-          <p class="text-white font-bold mb-2">₹150</p>
+          <p class="text-gray-400 text-sm mb-2">Customized initial rakhis crafted with care.</p>
+          <p class="text-white font-bold">₹150</p>
+          <a href="https://wa.me/917738541007?text=Hi%2C%20I%20want%20to%20order%20Alphabet%20Rakhi." class="block mt-3 text-center bg-pink-600 text-white py-2 px-4 rounded animated-button" target="_blank">Order Now</a>
         </div>
 
-        <div class="bg-gray-800 rounded-lg shadow p-4 relative group">
-          <img src="images/Evil Eye rakhi.jpeg" alt="Evil Eye Rakhi" class="w-full h-48 object-cover rounded">
+        <!-- 2. Evil Eye Rakhi -->
+        <div class="bg-gray-800 rounded-lg shadow p-4 relative group glow-on-hover">
+          <img src="images/Evil Eye rakhi.jpeg" alt="Evil Eye Rakhi" class="w-full h-48 object-contain rounded bg-white zoom-on-hover">
           <div class="absolute top-0 left-0 bg-black bg-opacity-75 text-white text-sm px-2 py-1 rounded-bl-lg opacity-0 group-hover:opacity-100 transition">Evil Eye Rakhi</div>
           <h4 class="font-semibold text-lg mt-4 text-white">Evil Eye Rakhi</h4>
-          <p class="text-gray-400 text-sm mb-2">Symbol of protection with white pearl threading.</p>
-          <p class="text-white font-bold mb-2">₹150</p>
+          <p class="text-gray-400 text-sm mb-2">A protective and trendy rakhi design.</p>
+          <p class="text-white font-bold">₹150</p>
+          <a href="https://wa.me/917738541007?text=Hi%2C%20I%20want%20to%20order%20Evil%20Eye%20Rakhi." class="block mt-3 text-center bg-pink-600 text-white py-2 px-4 rounded animated-button" target="_blank">Order Now</a>
         </div>
 
-        <div class="bg-gray-800 rounded-lg shadow p-4 relative group">
-          <img src="images/Keychains.jpeg" alt="Crochet Keychains" class="w-full h-48 object-cover rounded">
+        <!-- 3. Keychains -->
+        <div class="bg-gray-800 rounded-lg shadow p-4 relative group glow-on-hover">
+          <img src="images/Keychains.jpeg" alt="Keychains" class="w-full h-48 object-contain rounded bg-white zoom-on-hover">
           <div class="absolute top-0 left-0 bg-black bg-opacity-75 text-white text-sm px-2 py-1 rounded-bl-lg opacity-0 group-hover:opacity-100 transition">Keychains</div>
           <h4 class="font-semibold text-lg mt-4 text-white">Crochet Keychains</h4>
-          <p class="text-gray-400 text-sm mb-2">Fun and colorful crochet keyrings with car design.</p>
-          <p class="text-white font-bold mb-2">₹150</p>
+          <p class="text-gray-400 text-sm mb-2">Fun keychains made with colorful yarns.</p>
+          <p class="text-white font-bold">₹150</p>
+          <a href="https://wa.me/917738541007?text=Hi%2C%20I%20want%20to%20order%20Crochet%20Keychains." class="block mt-3 text-center bg-pink-600 text-white py-2 px-4 rounded animated-button" target="_blank">Order Now</a>
         </div>
 
-        <div class="bg-gray-800 rounded-lg shadow p-4 relative group">
-          <img src="images/yingyang rakhi.jpeg" alt="YingYang Rakhi" class="w-full h-48 object-cover rounded">
+        <!-- 4. Mix All -->
+        <div class="bg-gray-800 rounded-lg shadow p-4 relative group glow-on-hover">
+          <img src="images/Mix all.jpeg" alt="Mix All" class="w-full h-48 object-contain rounded bg-white zoom-on-hover">
+          <div class="absolute top-0 left-0 bg-black bg-opacity-75 text-white text-sm px-2 py-1 rounded-bl-lg opacity-0 group-hover:opacity-100 transition">Mix Collection</div>
+          <h4 class="font-semibold text-lg mt-4 text-white">Mix Collection</h4>
+          <p class="text-gray-400 text-sm mb-2">A mix of cars, animals, flowers and more!</p>
+          <p class="text-white font-bold">₹150</p>
+          <a href="https://wa.me/917738541007?text=Hi%2C%20I%20want%20to%20order%20Mix%20Collection." class="block mt-3 text-center bg-pink-600 text-white py-2 px-4 rounded animated-button" target="_blank">Order Now</a>
+        </div>
+
+        <!-- 5. Rakhi 1 -->
+        <div class="bg-gray-800 rounded-lg shadow p-4 relative group glow-on-hover">
+          <img src="images/Rakhi 1.jpeg" alt="Rakhi 1" class="w-full h-48 object-contain rounded bg-white zoom-on-hover">
+          <div class="absolute top-0 left-0 bg-black bg-opacity-75 text-white text-sm px-2 py-1 rounded-bl-lg opacity-0 group-hover:opacity-100 transition">Rakhi 1</div>
+          <h4 class="font-semibold text-lg mt-4 text-white">Floral Rakhi</h4>
+          <p class="text-gray-400 text-sm mb-2">Beautifully made rakhi with flower pattern.</p>
+          <p class="text-white font-bold">₹150</p>
+          <a href="https://wa.me/917738541007?text=Hi%2C%20I%20want%20to%20order%20Floral%20Rakhi." class="block mt-3 text-center bg-pink-600 text-white py-2 px-4 rounded animated-button" target="_blank">Order Now</a>
+        </div>
+
+        <!-- 6. Rakhi Cartoon -->
+        <div class="bg-gray-800 rounded-lg shadow p-4 relative group glow-on-hover">
+          <img src="images/Rakhi cartoon.jpeg" alt="Cartoon Rakhi" class="w-full h-48 object-contain rounded bg-white zoom-on-hover">
+          <div class="absolute top-0 left-0 bg-black bg-opacity-75 text-white text-sm px-2 py-1 rounded-bl-lg opacity-0 group-hover:opacity-100 transition">Cartoon Rakhi</div>
+          <h4 class="font-semibold text-lg mt-4 text-white">Cartoon Rakhi</h4>
+          <p class="text-gray-400 text-sm mb-2">Rakhis with lion, bunny, and fun themes!</p>
+          <p class="text-white font-bold">₹150</p>
+          <a href="https://wa.me/917738541007?text=Hi%2C%20I%20want%20to%20order%20Cartoon%20Rakhi." class="block mt-3 text-center bg-pink-600 text-white py-2 px-4 rounded animated-button" target="_blank">Order Now</a>
+        </div>
+
+        <!-- 7. YingYang Rakhi -->
+        <div class="bg-gray-800 rounded-lg shadow p-4 relative group glow-on-hover">
+          <img src="images/yingyang rakhi.jpeg" alt="YingYang Rakhi" class="w-full h-48 object-contain rounded bg-white zoom-on-hover">
           <div class="absolute top-0 left-0 bg-black bg-opacity-75 text-white text-sm px-2 py-1 rounded-bl-lg opacity-0 group-hover:opacity-100 transition">YingYang Rakhi</div>
           <h4 class="font-semibold text-lg mt-4 text-white">YingYang Rakhi</h4>
-          <p class="text-gray-400 text-sm mb-2">Dual-color design with pearls for a unique look.</p>
-          <p class="text-white font-bold mb-2">₹150</p>
+          <p class="text-gray-400 text-sm mb-2">Unique dual-color rakhi with symmetry.</p>
+          <p class="text-white font-bold">₹150</p>
+          <a href="https://wa.me/917738541007?text=Hi%2C%20I%20want%20to%20order%20YingYang%20Rakhi." class="block mt-3 text-center bg-pink-600 text-white py-2 px-4 rounded animated-button" target="_blank">Order Now</a>
         </div>
 
       </div>
