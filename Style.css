@@ -1,0 +1,173 @@
+/* Color Palette: */
+/* Primary Blue: #34495e (Dark Slate Blue) */
+/* Secondary Blue/Accent: #5C7C8A (Muted Blue/Gray-Blue) */
+/* Light Gray: #ecf0f1 (Clouds / Light Gray) */
+/* Text Color: #2c3e50 (Darker Blue/Charcoal) */
+/* White: #FFFFFF */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ecf0f1; /* Light Gray background */
+    color: #2c3e50; /* Darker text */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #FFFFFF; /* White background for the content box */
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #34495e; /* Primary Blue line */
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 25px;
+    border: 3px solid #5C7C8A; /* Secondary Blue border */
+}
+
+.header-right h1 {
+    margin: 0 0 5px 0;
+    color: #34495e; /* Primary Blue for name */
+    font-size: 2.2em;
+}
+
+.tagline {
+    font-size: 1.1em;
+    color: #5C7C8A; /* Secondary Blue for tagline */
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contact-info p {
+    margin: 3px 0;
+    font-size: 0.95em;
+}
+
+.contact-info a {
+    color: #5C7C8A; /* Secondary Blue for links */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #34495e; /* Primary Blue on hover */
+}
+
+.section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #cccccc; /* Light gray dashed line */
+}
+
+.section:last-of-type {
+    border-bottom: none; /* No border for the last section */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h2 {
+    color: #34495e; /* Primary Blue for section titles */
+    font-size: 1.7em;
+    margin-bottom: 15px;
+    border-left: 5px solid #5C7C8A; /* Secondary Blue accent */
+    padding-left: 10px;
+}
+
+ul {
+    list-style: none; /* Remove default bullet */
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+ul li::before {
+    content: '\2022'; /* Custom bullet point (large dot) */
+    color: #5C7C8A; /* Secondary Blue bullet */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 3px solid #ecf0f1; /* Subtle light gray line */
+}
+
+.experience-item h3, .education-item h3 {
+    color: #2c3e50; /* Darker text for role/degree */
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+}
+
+.experience-item p.duration {
+    font-style: italic;
+    color: #5C7C8A; /* Secondary Blue for duration */
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.experience-item ul {
+    list-style: disc; /* Use standard disc for job duties */
+    padding-left: 20px;
+}
+
+.experience-item ul li::before {
+    content: none; /* Remove custom bullet from nested lists */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #cccccc; /* Light gray line */
+    color: #5C7C8A; /* Secondary Blue for footer text */
+    font-size: 0.85em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-photo {
+        margin: 0 0 15px 0;
+    }
+    .header-right {
+        text-align: center;
+    }
+    .container {
+        padding: 20px 25px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+}
